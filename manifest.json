@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "bitcoin-tool",
+    "version": "1.0",
+
+    "description": "Adds information about a Bitcoin-Adress from blockchain.com",
+
+    "icons": {
+        "48": "icons/bitcoin-tool-48.png",
+        "96": "icons/bitcoin-tool-96.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.blockchain.com/*"],
+            "js": ["main.js"]
+        }
+    ]
+
+}
