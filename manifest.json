@@ -11,11 +11,17 @@
         "96": "icons/bitcoin-tool-96.png"
     },
 
+
     "content_scripts": [
         {
             "matches": ["*://*.blockchain.com/*"],
             "js": ["main.js"]
         }
-    ]
+    ],
 
+
+    "permissions": [
+        "*://blockchain.info/*",
+        "webRequest"
+    ]
 }
